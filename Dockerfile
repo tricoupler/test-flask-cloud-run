@@ -1,6 +1,7 @@
-FROM python:3.6
-COPY . /app
+FROM python:3.8-alpine
+COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 8080/tcp
-CMD ["/usr/bin/python3", "-m", "flask","run","./hello.py"]
+COPY . /app
+ENTRYPOINT [ "python" ]
+CMD ["hello.py" ]
