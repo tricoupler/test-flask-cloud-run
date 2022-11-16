@@ -3,4 +3,4 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 8080/tcp
-CMD ["/usr/bin/python", "-m", "flask","run","./hello.py"]
+CMD ["/usr/bin/python3", "-m", "flask","run","./hello.py"]
