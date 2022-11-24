@@ -1,5 +1,5 @@
 from flask import Flask
-import requests
+from flask import request
 app = Flask(__name__)
 
 @app.route("/")
@@ -12,7 +12,7 @@ def route32a():
 
 @app.route("/route")
 def route():
-    number=requests.get('number')
+    number=request.args.get('number')
     return "Hello from the {}".format(number)
 
 if __name__ == "__main__":
