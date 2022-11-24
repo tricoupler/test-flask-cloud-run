@@ -6,8 +6,8 @@ app = Flask(__name__)
 def hello():
     return "Hello again from Dockerised Flask"
 
-@app.route("/route")
-def route():
+@app.route("/route32a")
+def route32a():
     return "Hello from the 32A"
 
 @app.route("/route")
