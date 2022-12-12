@@ -15,5 +15,10 @@ def route():
     number=request.args.get('number')
     return "Hello from the {}".format(number)
 
+@app.route("/ctb")
+def ctb():
+    return "Hello Cloud Tech for Business, this is Dockerised Flask"
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='8080')
