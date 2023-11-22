@@ -3,8 +3,8 @@ from flask import request
 app = Flask(__name__)
 
 @app.route("/")
-def hello1():
-    return "Hello anew from Dockerised Flask"
+def hello2():
+    return "Say Hello from Dockerised Flask"
 
 @app.route("/route32a")
 def route32a():
