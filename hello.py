@@ -17,7 +17,7 @@ def route():
 
 @app.route("/cc")
 def ctb():
-    return "Hello Cloud Computing, this is Dockerised Flask"
+    return "Hello Cloud Computing, this is a Dockerised Flask"
 
 
 if __name__ == "__main__":
