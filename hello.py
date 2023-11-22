@@ -16,7 +16,7 @@ def route():
     return "Hello from the {}".format(number)
 
 @app.route("/cc")
-def ctb():
+def cc():
     return "Hello Cloud Computing, this is a Dockerised Flask"
 
 
