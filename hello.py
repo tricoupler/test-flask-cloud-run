@@ -15,9 +15,9 @@ def route():
     number=request.args.get('number')
     return "Hello from the {}".format(number)
 
-@app.route("/ctb")
+@app.route("/cc")
 def ctb():
-    return "Hello Cloud Tech for Business, this is Dockerised Flask"
+    return "Hello Cloud Computing, this is Dockerised Flask"
 
 
 if __name__ == "__main__":
