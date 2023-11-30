@@ -11,12 +11,12 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'serviceconnection'
-  imageRepository: 'test-flask-cloud-run'
+  dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
+  imageRepository: 'lairdptestflaskcloudrun'
   containerRegistry: 'c21471486Lab5.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'c21471486Lab5-auth'
+  imagePullSecret: 'labo5test5269-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
